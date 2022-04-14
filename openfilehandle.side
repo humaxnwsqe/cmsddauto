@@ -1,0 +1,344 @@
+{
+  "id": "d52ef05b-3b42-4e7f-84b7-b8e6c78185e2",
+  "version": "2.0",
+  "name": "openfilehandle",
+  "url": "http://221.140.31.130:8080/deploy.do?method=fetch&boatype=DHCP",
+  "tests": [{
+    "id": "172725d7-d754-4616-b5f4-eac501456b69",
+    "name": "testfileimport",
+    "commands": [{
+      "id": "8e36e741-7a6e-4cfd-803f-8d684b5c6828",
+      "comment": "",
+      "command": "open",
+      "target": "/Welcome.do;jsessionid=77D612823F0E1A64BEEFAD82585CFF2C",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "736bd13a-3df7-4c8d-b943-5cecd31e8272",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1514x893",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab75512e-e225-4216-9e23-787e3bcdbc1b",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4a6abd1-4b7f-4b8e-923d-479f03e757d1",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "34adbb05-7194-4ed2-a6c7-140f37bb05b5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Open Local Files",
+      "targets": [
+        ["linkText=Open Local Files", "linkText"],
+        ["css=ul:nth-child(13) > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Open Local Files')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/tlvedit.do?method=fetchUpload')]", "xpath:href"],
+        ["xpath=//ul[6]/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Open Local Files')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d312055d-8ca6-465c-8389-01b5d54cf73c",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "b817e463-6464-4bf1-9d8f-ec66619c6deb",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "7241c0a6-16c3-42cf-a136-5ede47ce9144",
+      "comment": "",
+      "command": "click",
+      "target": "name=localfile",
+      "targets": [
+        ["name=localfile", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='localfile']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c84609a3-87aa-4ac6-b51a-8d46eab7b34e",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='file']",
+      "targets": [
+        ["name=localfile", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='localfile']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "D:\\03.SW Test\\06.RG\\04.JCOM\\07.HGJ310_JP_V4\\bpi_sec_na_hslee4_310V4_current.cfg"
+    }, {
+      "id": "b4788f56-c068-424a-adf1-7a3a52db3c62",
+      "comment": "",
+      "command": "click",
+      "target": "name=tlvfor",
+      "targets": [
+        ["name=tlvfor", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='tlvfor']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d802443-4e7d-4c72-b21b-f1fc87b80508",
+      "comment": "",
+      "command": "select",
+      "target": "name=tlvfor",
+      "targets": [],
+      "value": "label=CM"
+    }, {
+      "id": "492ceea6-4279-4837-b24b-d0da98c7f595",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(2)",
+      "targets": [
+        ["css=option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='CM']", "xpath:attributes"],
+        ["xpath=//option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'CM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e5254f5-b56d-42e1-98cb-36ffe9a1dc15",
+      "comment": "",
+      "command": "click",
+      "target": "name=noedit",
+      "targets": [
+        ["name=noedit", "name"],
+        ["css=input:nth-child(7)", "css:finder"],
+        ["xpath=//input[@name='noedit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcc7e530-13f5-4dd5-9203-eb1abf93d4d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(10)",
+      "targets": [
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@value='Upload']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b32f7cf1-5655-4ec0-bca4-e3398c498896",
+    "name": "testfileimport2",
+    "commands": [{
+      "id": "5a218db2-d1c3-433a-870f-ac04343f521a",
+      "comment": "",
+      "command": "open",
+      "target": "http://221.140.31.130:8080/tlvedit.do?method=fetchUpload",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c24d01b-888a-4f50-bda0-8f689dbdb312",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1514x896",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9de348fe-db72-43c4-a655-7c4935deee80",
+      "comment": "",
+      "command": "click",
+      "target": "name=localfile",
+      "targets": [
+        ["name=localfile", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='localfile']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0338a734-58b8-4f05-8f0c-9085e0d5d6ec",
+      "comment": "",
+      "command": "type",
+      "target": "name=localfile",
+      "targets": [
+        ["name=localfile", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='localfile']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "C:\\fakepath\\bpi_sec_na_hslee4_310V4_current.cfg"
+    }, {
+      "id": "f5e9b1ff-7500-4c0a-afcd-8325dbc90ce2",
+      "comment": "",
+      "command": "click",
+      "target": "name=tlvfor",
+      "targets": [
+        ["name=tlvfor", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='tlvfor']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23d1ce3a-188e-477b-ad43-222e5dca7436",
+      "comment": "",
+      "command": "select",
+      "target": "name=tlvfor",
+      "targets": [],
+      "value": "label=CM"
+    }, {
+      "id": "42b9cb6c-c634-4dc5-9d46-07393903ef2c",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(2)",
+      "targets": [
+        ["css=option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='CM']", "xpath:attributes"],
+        ["xpath=//option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'CM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c44ea75d-b981-479a-b75e-ca1af016b6bd",
+      "comment": "",
+      "command": "click",
+      "target": "name=noedit",
+      "targets": [
+        ["name=noedit", "name"],
+        ["css=input:nth-child(7)", "css:finder"],
+        ["xpath=//input[@name='noedit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9290bf7a-fa1a-460f-bcfa-d0f8e8d2e130",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(10)",
+      "targets": [
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@value='Upload']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed9e8807-668c-4fca-9ff5-1a5e0749e00f",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b962aae2-7364-46d9-935a-71d034874197",
+      "comment": "",
+      "command": "assertChecked",
+      "target": "css=font",
+      "targets": [
+        ["css=font", "css:finder"],
+        ["xpath=//font", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19b2b0f8-7adc-4b8a-8062-cd960d74612e",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "linkText=bpi_sec_na_hslee4_current.cfg",
+      "targets": [
+        ["linkText=bpi_sec_na_hslee4_current.cfg", "linkText"],
+        ["css=tr:nth-child(65) > td:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'bpi_sec_na_hslee4_current.cfg')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/tlvedit.do?method=fetchEdit&filename=bpi_sec_na_hslee4_current.cfg&tlvfor=CM')]", "xpath:href"],
+        ["xpath=//tr[65]/td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'bpi_sec_na_hslee4_current.cfg')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "455303f6-0c3b-454e-a92e-17a369cd5355",
+    "name": "confiledeploy",
+    "commands": [{
+      "id": "b5b61c4e-bf50-42d7-9851-7c634dd0d8b7",
+      "comment": "",
+      "command": "open",
+      "target": "http://221.140.31.130:8080/deploy.do?method=fetch&boatype=DHCP",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f5239bac-1568-40e6-9d64-1221fe98a561",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1514x897",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1701860a-e5bd-4bb9-8ee8-9fa61fb8df43",
+      "comment": "",
+      "command": "click",
+      "target": "name=deploy_boa",
+      "targets": [
+        ["name=deploy_boa", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='deploy_boa']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de821740-9b1c-4594-971f-4c9a3ca31cfc",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27da36fa-a041-48f5-af11-20695f184d78",
+      "comment": "",
+      "command": "verifySelectedLabel",
+      "target": "xpath=//font[contains(.,'DHCP deployment successful')]",
+      "targets": [
+        ["css=font", "css:finder"],
+        ["xpath=//font", "xpath:position"],
+        ["xpath=//font[contains(.,'DHCP deployment successful')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0d8d30d8-0c65-48b0-bf2d-6f9a3517603d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["172725d7-d754-4616-b5f4-eac501456b69"]
+  }],
+  "urls": ["http://221.140.31.130:8080/", "http://221.140.31.130:8080/tlvedit.do?method=fetchUpload", "http://221.140.31.130:8080/deploy.do?method=fetch&boatype=DHCP"],
+  "plugins": []
+}
