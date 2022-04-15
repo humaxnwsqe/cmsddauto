@@ -3,3 +3,4 @@
 __pycache__/*
 *.txt
 test_*.py
+config.py
