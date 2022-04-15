@@ -2,9 +2,11 @@
 ## Summary
 Secured Software Download(SDD) is the mandatory way of Cable Modem products.
 In the internal testing environment, if the software file is on the file management server (tftp), a configuration file which including the software information should be enrolled through a provisioning server (e.g. PACT).
+
 And then the following steps to execute SSD are like below:
 - Rebooting CM
 - Monitoring of software downloading progress
+- 
 Final software version should be checked after downloading and installation have finished.
 Those steps also can be also done manually but those things are very inconvinient so some python scripts for automation of SDD have made. 
 And plus these scripts could be enlarged for the other testing automation. 
